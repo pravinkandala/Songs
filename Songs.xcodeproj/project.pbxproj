@@ -13,6 +13,8 @@
 		3D5136C11C713A53000677F2 /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136BF1C713A53000677F2 /* Songs.xcdatamodeld */; };
 		3D5136C31C713A53000677F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5136C21C713A53000677F2 /* Assets.xcassets */; };
 		3D5136C61C713A53000677F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5136C41C713A53000677F2 /* LaunchScreen.storyboard */; };
+		3D5136CF1C713A8A000677F2 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */; };
+		3D5136D01C713A8A000677F2 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136CE1C713A8A000677F2 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3D5136C21C713A53000677F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5136C51C713A53000677F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5136C71C713A53000677F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "../Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3D5136CE1C713A8A000677F2 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = ../Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3D5136C41C713A53000677F2 /* LaunchScreen.storyboard */,
 				3D5136C71C713A53000677F2 /* Info.plist */,
 				3D5136BF1C713A53000677F2 /* Songs.xcdatamodeld */,
+				3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */,
+				3D5136CE1C713A8A000677F2 /* Entity.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5136BB1C713A53000677F2 /* ViewController.swift in Sources */,
+				3D5136D01C713A8A000677F2 /* Entity.swift in Sources */,
 				3D5136C11C713A53000677F2 /* Songs.xcdatamodeld in Sources */,
+				3D5136CF1C713A8A000677F2 /* Entity+CoreDataProperties.swift in Sources */,
 				3D5136B91C713A53000677F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
