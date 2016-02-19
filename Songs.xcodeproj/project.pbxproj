@@ -13,8 +13,9 @@
 		3D5136C11C713A53000677F2 /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136BF1C713A53000677F2 /* Songs.xcdatamodeld */; };
 		3D5136C31C713A53000677F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5136C21C713A53000677F2 /* Assets.xcassets */; };
 		3D5136C61C713A53000677F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5136C41C713A53000677F2 /* LaunchScreen.storyboard */; };
-		3D5136CF1C713A8A000677F2 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */; };
-		3D5136D01C713A8A000677F2 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136CE1C713A8A000677F2 /* Entity.swift */; };
+		3D5136D61C7165AE000677F2 /* StoreListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136D51C7165AE000677F2 /* StoreListTableViewController.swift */; };
+		3D5136D91C74246E000677F2 /* Songs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136D71C74246E000677F2 /* Songs+CoreDataProperties.swift */; };
+		3D5136DA1C74246E000677F2 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5136D81C74246E000677F2 /* Songs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		3D5136C21C713A53000677F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5136C51C713A53000677F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5136C71C713A53000677F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "../Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3D5136CE1C713A8A000677F2 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = ../Entity.swift; sourceTree = "<group>"; };
+		3D5136D51C7165AE000677F2 /* StoreListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListTableViewController.swift; sourceTree = "<group>"; };
+		3D5136D71C74246E000677F2 /* Songs+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Songs+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3D5136D81C74246E000677F2 /* Songs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +69,9 @@
 				3D5136C41C713A53000677F2 /* LaunchScreen.storyboard */,
 				3D5136C71C713A53000677F2 /* Info.plist */,
 				3D5136BF1C713A53000677F2 /* Songs.xcdatamodeld */,
-				3D5136CD1C713A8A000677F2 /* Entity+CoreDataProperties.swift */,
-				3D5136CE1C713A8A000677F2 /* Entity.swift */,
+				3D5136D51C7165AE000677F2 /* StoreListTableViewController.swift */,
+				3D5136D71C74246E000677F2 /* Songs+CoreDataProperties.swift */,
+				3D5136D81C74246E000677F2 /* Songs.swift */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -105,6 +108,7 @@
 				TargetAttributes = {
 					3D5136B41C713A53000677F2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3B5JCAQ732;
 					};
 				};
 			};
@@ -144,11 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5136DA1C74246E000677F2 /* Songs.swift in Sources */,
+				3D5136D61C7165AE000677F2 /* StoreListTableViewController.swift in Sources */,
 				3D5136BB1C713A53000677F2 /* ViewController.swift in Sources */,
-				3D5136D01C713A8A000677F2 /* Entity.swift in Sources */,
 				3D5136C11C713A53000677F2 /* Songs.xcdatamodeld in Sources */,
-				3D5136CF1C713A8A000677F2 /* Entity+CoreDataProperties.swift in Sources */,
 				3D5136B91C713A53000677F2 /* AppDelegate.swift in Sources */,
+				3D5136D91C74246E000677F2 /* Songs+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Songs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.niu.cs.z1761257.Songs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -270,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Songs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.niu.cs.z1761257.Songs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
